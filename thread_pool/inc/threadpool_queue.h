@@ -1,9 +1,3 @@
-/*************************************************************************
-	> File Name: threadpool_queue.h
-	> Author: Kang
-	> Mail:likang@tju.edu.cn 
- ************************************************************************/
-#ifndef THREADPOOL_QUEUE_H_
 #define THREADPOOL_QUEUE_H_
 #include <pthread.h>
 #include "common.h"

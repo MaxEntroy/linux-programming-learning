@@ -1,9 +1,3 @@
-/*************************************************************************
-	> File Name: threadpool_queue.c
-	> Author: Kang
-	> Mail:likang@tju.edu.cn 
-	> Created Time: 2017年09月21日 星期四 12时58分34秒
- ************************************************************************/
 #include "threadpool_queue.h"
 #include <assert.h>
 #include <stdlib.h> 

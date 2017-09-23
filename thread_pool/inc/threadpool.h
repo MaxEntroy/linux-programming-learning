@@ -1,9 +1,3 @@
-/*************************************************************************
-	> File Name: threadpool.h
-	> Author: Kang
-	> Mail:likang@tju.edu.cn 
- ************************************************************************/
-#ifndef THREADPOOL_H_
 #define THREADPOOL_H_
 #include <pthread.h>
 #include "common.h"
