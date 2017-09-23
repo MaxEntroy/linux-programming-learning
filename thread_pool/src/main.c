@@ -8,7 +8,7 @@
 #include "threadpool.h"
 #define LEN 128
 
-static void* thread_handle(void*);
+static void* worker(void*);
 static int process_task( task_t* val );
 
 int main( int argc, char* argv[] ){
@@ -26,7 +26,7 @@ int main( int argc, char* argv[] ){
 	}
 
 	threadpool_t pool;
-	threadpool_init( &pool, atoi(argv[1]), thread_handle, atoi(argv[2]) );
+	threadpool_init( &pool, atoi(argv[1]), worker, atoi(argv[2]) );
 	threadpool_start( &pool );
 	
 	FD_ZERO(&readfds);
@@ -71,7 +71,7 @@ int main( int argc, char* argv[] ){
 
 }// main
 
-static void* thread_handle(void* arg) {
+static void* worker(void* arg) {
 	assert(arg);
 	
 	threadpool_t* ppool = (threadpool_t*)(arg);

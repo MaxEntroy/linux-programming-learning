@@ -1,3 +1,4 @@
+#ifndef THREADPOOL_QUEUE_H_
 #define THREADPOOL_QUEUE_H_
 #include <pthread.h>
 #include "common.h"
