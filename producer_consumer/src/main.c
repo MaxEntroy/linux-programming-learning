@@ -1,9 +1,3 @@
-/*************************************************************************
-	> File Name: main.c
-	> Author: Kang
-	> Mail:likang@tju.edu.cn 
-	> Created Time: 2017年08月16日 星期三 13时16分37秒
- ************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
